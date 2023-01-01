@@ -11,7 +11,8 @@
     },
     "dependencies": {
         "sass": "^1.57.1",
-        "vue": "^2.5.11"
+        "vue": "^2.5.11",
+        "vue-router": "^4.1.6"
     },
     "browserslist": [
         "> 1%",
