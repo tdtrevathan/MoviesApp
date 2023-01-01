@@ -12,5 +12,6 @@ namespace MoviesApp.Models
         public int Year { get; set; }
         public string Director { get; set; }
         public string Description { get; set; }
+        public string Cast { get; set; }
     }
 }

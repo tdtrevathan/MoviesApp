@@ -32,14 +32,16 @@
 					title: '',
 					year: '',
 					director: '',
-					description: ''
+					description: '',
+					cast: '',
 				},
 				showAddModal: false,
 				movieToEdit: {
 					title: '',
 					year: '',
 					director: '',
-					description: ''
+					description: '',
+					cast: '',
 				},
 				showEditModal: false,
 			}
@@ -63,7 +65,8 @@
 					title: '',
 					year: '',
 					director: '',
-					description: ''
+					description: '',
+					cast: '',
 				};
 			},
 			saveMovieAdd() {
@@ -92,7 +95,8 @@
 					title: '',
 					year: '',
 					director: '',
-					description: ''
+					description: '',
+					cast: '',
 				};
 			},
 			saveMovieEdit() {
