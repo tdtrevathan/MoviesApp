@@ -8,5 +8,5 @@ new Vue({
 	template: '<app/>',
 	components: { App },
 
-}).$mount('#app');
+})
 
