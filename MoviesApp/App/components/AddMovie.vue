@@ -14,6 +14,10 @@
                         </div>
                         <div class="form-group">
                             <label>Title</label>
+                            <input type="text" class="form-control" v-model="movie.poster" />
+                        </div>
+                        <div class="form-group">
+                            <label>Title</label>
                             <input type="text" class="form-control" v-model="movie.title" />
                         </div>
                         <div class="form-group">
@@ -57,7 +61,7 @@
 			},
 			saveMovieAdd() {
 				this.showError = false;
-				if (this.movie.title.length > 0 && this.movie.year > 0 && this.movie.director.length > 0 && this.movie.description.length > 0 && this.movie.cast.length) {
+				if (this.movie.title.length > 0 && this.movie.year > 0 && this.movie.director.length > 0 && this.movie.description.length > 0 && this.movie.cast.length > 0 && this.movie.poster.length > 0) {
 					this.$emit('save-movie-add');
 				} else {
 					this.showError = true;

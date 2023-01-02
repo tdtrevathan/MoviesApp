@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace MoviesApp.Models
 {
@@ -13,5 +14,6 @@ namespace MoviesApp.Models
         public string Director { get; set; }
         public string Description { get; set; }
         public string Cast { get; set; }
+        public string Poster { get; set; }
     }
 }

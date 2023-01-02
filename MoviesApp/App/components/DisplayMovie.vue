@@ -2,6 +2,7 @@
 	<div class="col-sm-4">
 		<div class="card mt-3">
 			<div class="card-body">
+				<img class="card-img" :src="movie.poster"/>
 				<h4 class="card-title">{{movie.title}}</h4>
 				<h6 class="card-subtitle mb-2 text-muted">{{movie.year}} - {{movie.director}}</h6>
 				<p class="card-text">
@@ -14,6 +15,7 @@
 		</div>
 	</div>
 </template>
+
 <script type="text/javascript">
 	export default {
 		props: ['movie'],

@@ -2,7 +2,6 @@
 <template>
 
 	<div>
-		<home></home>
 		<div class="row">
 			<div class="col mt-3">
 				<button class="btn btn-primary" v-on:click="openAddModal">Add Movie</button>
@@ -17,7 +16,6 @@
 </template>
 <script>
 	import DisplayMovie from './components/DisplayMovie'
-	import Home from './components/Home.vue'
 	import axios from 'axios'
 	import AddMovie from './components/AddMovie'
 	import EditMovie from './components/EditMovie'
@@ -27,12 +25,12 @@
 			DisplayMovie,
 			AddMovie,
 			EditMovie,
-			Home
 		},
 		data() {
 			return {
 				movies: [],
 				movieToAdd: {
+					poster: '',
 					title: '',
 					year: '',
 					director: '',
@@ -41,6 +39,7 @@
 				},
 				showAddModal: false,
 				movieToEdit: {
+                    poster: '',
 					title: '',
 					year: '',
 					director: '',
@@ -66,6 +65,7 @@
 			closeAddModal() {
 				this.showAddModal = false;
 				this.movieToAdd = {
+                    poster: '',
 					title: '',
 					year: '',
 					director: '',
@@ -96,6 +96,7 @@
 			closeEditModal() {
 				this.showEditModal = false;
 				this.movieToEdit = {
+					poster: '',
 					title: '',
 					year: '',
 					director: '',
@@ -129,41 +130,4 @@
 	}
 </script>
 <style lang="scss">
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Fira Sans', sans-serif;
-
-        &::selection {
-            background: transparentize(#428883,0.5);
-        }
-    }
-
-	body{
-		background-color: #35495E;
-	}
-
-	a{
-		text-decoration: none;
-	}
-
-	header {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding: 10px 16px;
-		background-color: #2C3D4E;
-		box-shadow: 0px 0px 6px rgba(0,0,0,0.1);
-	}
-
-	h1{
-		color: #FFF;
-		font-size: 28px;
-	}
-
-	span{
-		color: #428883;
-	}
-
 </style>
